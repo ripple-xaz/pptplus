@@ -1,0 +1,17 @@
+/* dist/pages/my-ppt/my-ppt.wxss */
+@import "/dist/components/my-center/user-info/user-info";
+@import "/dist/components/my-center/my-mid-tab/my-mid-tab";
+@import "/dist/components/my-center/my-ppt-extend/my-ppt-extend.wxss";
+@import "/dist/components/pices/page-loading/page-loading.wxss";
+.create-ctx{
+  position: absolute;
+  left: -99999px;
+}
+Page{
+  overflow-y: hidden;
+  height: 100%;
+}
+.page-scroll{
+  height: 100%;
+  background-color: #eee;
+}

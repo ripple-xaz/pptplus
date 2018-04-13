@@ -1,0 +1,27 @@
+<template name="my-ppt-upload">
+   <view   id='my-ppt-upload' class='my-ppt-upload' style="height:{{isIpx?'726rpx':'658rpx'}}">
+    <image src="/images/upload-image-03.png"></image>
+    <view class='upload-step'>
+      <view class='upload-tit'>
+        <!-- <text class='upload-index'>1</text> -->
+        <text class='upload-tit-text' style='padding-left:130rpx;'>在浏览器中输入下方网址</text>
+      </view>
+      <text class='upload-input' style='width:560rpx;'>http://www.pptx.info</text>
+    </view>
+<!-- <view class='upload-step' style='margin-top:48rpx;'>
+        <view  class='upload-tit'>
+        <text class="upload-index">2</text>
+          <text class='upload-tit-text'>在网页浏览器中输入下方蓝色验证码</text>
+        </view>
+        <text class='upload-input'>1234</text>
+        <text class='reget-code'>刷新</text>
+     </view>  -->
+     <view class='upload-step' style='margin-top:48rpx;'>
+      <view  class='upload-tit'>
+       <text>小提示：PPT小助手不仅可以上传ppt，还可以上传pdf哦</text>
+      </view>
+      <!-- <text class='upload-input'>1234</text>
+      <text class='reget-code'>刷新</text> -->
+    </view> 
+   </view>
+</template>

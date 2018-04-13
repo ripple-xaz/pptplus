@@ -1,0 +1,11 @@
+<template name="swiperContainer">
+  <view class='swiper-container' style="{{imgSwiperHeight}}">
+    <!-- <swiper class='swiper' circular="{{true}}" style="{{imgSwiperHeight}}"  duration="{{duration}}" bindtouchend='hideCount' bindtouchstart='showCount'  bindchange="swiperChange"> 
+      <block wx:for="{{imgList}}" wx:key="index">
+        <swiper-item> -->
+          <image bindtap='pptFullScreen' mode='aspectFit' src="{{cover}}" class="slide-image" width="355" height="150"/>
+       <!-- </swiper-item> 
+      </block>
+    </swiper>  -->
+  </view>
+</template>

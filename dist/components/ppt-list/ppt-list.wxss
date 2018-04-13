@@ -1,0 +1,71 @@
+
+.ppt-list-person{
+  display: flex;
+  height: 104rpx;
+  line-height: 104rpx;
+}
+.creator-info {
+  flex: 2;
+  font-size: 22rpx;
+  color: rgb(53,53,53)
+}
+.creator-info image{
+  vertical-align: middle;
+  width: 56rpx;
+  height: 56rpx;
+  border-radius: 50%;
+  margin:0 10rpx 0 24rpx;
+}
+.ppt-other-info{
+  text-align: right;
+  flex: 1;
+  color: rgb(136, 136, 136);
+  margin-right: 24rpx;
+}
+.ppt-other-info image{
+  width: 32rpx;
+  height: 24rpx;
+  vertical-align: middle;
+}
+.ppt-cover{
+  width: 702rpx;
+  height: 320rpx;
+  margin: 24rpx 24rpx 0;
+  border-radius: 8rpx;
+}
+.ppt-list-meeting{
+  padding-bottom: 14rpx;
+}
+.ppt-list-meeting>view{
+  margin: 0 24rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+}
+.ppt-list-meeting image{
+  vertical-align: middle;
+}
+.title-img{
+  width: 36rpx;
+  height: 31rpx;
+  margin-right: 25rpx;
+}
+.duration-img{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 27rpx;
+}
+.address-img{
+  width: 26rpx;
+  height: 35rpx;
+  margin: 0 29rpx 0 4rpx;
+}
+.address-right{
+  width: 16rpx;
+  height: 28rpx;
+  float: right;
+  margin-top: 18rpx;
+  margin-right: 24rpx;
+}
+.get-address{
+  background-color: #eee;
+}

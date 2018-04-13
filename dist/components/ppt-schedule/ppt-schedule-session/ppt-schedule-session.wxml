@@ -1,0 +1,9 @@
+<import src='ppt-schedule-session-duration/ppt-schedule-session-duration' />
+<import src='ppt-schedule-session-slicedppts/ppt-schedule-session-slicedppts' />
+
+<template name="ppt-schedule-session">
+  <view class='ppt-schedule-session' >
+    <template is='ppt-schedule-session-duration' data="{{duration}}"/>
+    <template is='ppt-schedule-session-slicedppts' data="{{sessionType,slicedppts,other}}"/>
+  </view>
+</template>

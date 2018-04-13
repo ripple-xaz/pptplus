@@ -1,0 +1,7 @@
+.ppt-info-extend{
+  height: 473rpx;
+}
+.ppt-info-extend scroll-view{
+  height:100%;
+  box-sizing: border-box;
+}

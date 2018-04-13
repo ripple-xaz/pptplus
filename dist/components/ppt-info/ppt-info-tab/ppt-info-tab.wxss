@@ -1,0 +1,18 @@
+.ppt-info-tab{
+  font-size: 32rpx;
+  color:rgb(136,136,136);
+  height: 88rpx;
+  line-height: 88rpx; 
+  display: flex;
+}
+.ppt-info-tab>view{
+  flex: 1;
+  border-bottom: 2rpx solid #eee;
+  text-align: center;
+  transition: border linear .75s;
+  
+}
+.ppt-info-tab>view.on{
+  color: rgb(97,149,255);
+  border-bottom: 2rpx solid  rgb(97,149,255);
+}

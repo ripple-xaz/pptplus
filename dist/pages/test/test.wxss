@@ -1,0 +1,33 @@
+/* dist/pages/test/test.wxss */
+.scroll-wrap{
+  height: 400rpx;
+}
+.scroll-wrap view{
+  width: 300vw;
+}
+.scroll-wrap image{
+  height: 400rpx;
+  width: 100vw;
+  float: left;
+}
+
+.swiper-left{
+  background-color: red;
+}
+.list-wrap{
+  width: 100vw;
+  height: 180rpx;
+}
+.list-wrap view{
+  float: left;
+}
+.list-view{
+  width: 100vw;
+  background-color: #ccc;
+  height: 180rpx;
+}
+.list-btn{
+  width: 30vw;
+  background-color: red;
+  height: 180rpx;
+}

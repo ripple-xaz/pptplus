@@ -1,0 +1,84 @@
+
+.ppt-list-wrap{
+border-bottom: 1rpx solid rgba(0, 0, 0,.1); 
+ position: relative;
+ height: 144rpx;
+}
+
+.my-ppt-list{
+  height: 144rpx;
+  width:750rpx;
+  background-color: #fff;
+ 
+ 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+   
+   /*scroll  */
+  display: flex;
+  float: left;
+}
+.my-ppt-list-right{
+  width:460rpx;
+  z-index: 6;
+
+ 
+}
+.operate-list{
+  height:144rpx;
+  width:168rpx;
+  text-align: center;
+  float: left;
+  line-height: 144rpx;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+.operate-list text{
+  display: inline-block;
+  border-radius: 50%;
+  width: 8rpx;
+  height: 8rpx;
+  background-color: rgba(0, 0, 0,0.6);
+  margin:4rpx; 
+
+}
+
+.my-ppt-list-left image{
+  width: 70rpx;
+  height: 80rpx;
+  margin: 32rpx 32rpx 32rpx 24rpx;
+}
+.title{
+  font-size: 34rpx;
+  color: rgb(53, 53, 53);
+  margin-top:28rpx;
+  font-weight: 500;
+}
+.time{
+ color: rgb(136, 136, 136);
+}
+.no-ppt-list{
+  height:658rpx;
+  background-color: #eee;
+  text-align: center;
+  color: rgb(178,178,178);
+  font-size: 32rpx;
+}
+.no-ppt-list view{
+  background-color: #eee;
+}
+.no-ppt-list image{
+  width: 88rpx;
+  height: 88rpx;
+  margin:200rpx 0 32rpx 0;
+}
+
+
+
+/* 只有设置了绝对定位的元素才会才可以设置层级 */
+.more-list-container{
+  position: absolute;
+  right: 20rpx;
+  z-index: 1001;
+}

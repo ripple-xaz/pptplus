@@ -1,0 +1,15 @@
+.count{
+  position: absolute;
+  padding-bottom: 6rpx;
+  border-radius: 8rpx;
+  height: 32rpx;
+  padding: 0 12rpx 4rpx;
+  bottom:22rpx;
+  transform: translateX(-50%);
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 32rpx;
+  opacity: 0;
+  background-color: rgba(0,0,0,0);
+}

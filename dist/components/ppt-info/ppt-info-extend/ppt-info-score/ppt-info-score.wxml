@@ -1,0 +1,10 @@
+<template name="ppt-info-score">
+    <view  wx:if="{{false}}">
+          <view id='ppt-info-score'></view>
+    </view>
+    <view id='ppt-info-score' wx:else class='ppt-info-score'>
+        <view class="score-num">{{scoreNum}}分</view>
+        <image id='score' catchtouchstart='scoreStart' src='{{scoreStyle}}'   catchtouchmove='scoreMove' catchtouchend='scoreEnd' class='point' src='{{scoreImg}}'></image> 
+        <view class='score-tit'>轻触星完成打分</view>
+    </view>
+</template>

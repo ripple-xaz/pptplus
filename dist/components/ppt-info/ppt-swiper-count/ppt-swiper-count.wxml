@@ -1,0 +1,7 @@
+<template  name="count">
+    <view animation="{{pptCountAnimationData}}" class='count' >
+          <text>{{current+1}}</text>
+          <text>/</text>
+          <text>{{total}}</text>
+    </view>
+</template>

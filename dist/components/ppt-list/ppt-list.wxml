@@ -1,0 +1,26 @@
+<import src="/dist/components/ppt-list/list-meeting/list-meeting.wxml"/>
+<template name="ppt-list">
+  <block wx:for="{{pptList}}" wx:for-index="idx"  wx:for-item="ppt"  wx:key="{{ppt.id}}" >
+    <view class="ppt-list">
+      <view>
+        <image class='ppt-cover' data-pptid="{{ppt.info.pptId}}" data-roleid="{{ppt.roleId}}" data-role="{{ppt.role}}" bindtap='navToPptInfo' src="{{ppt.info.cover}}"></image>
+      </view>
+      <view wx:if="{{ppt.role==='person'}}" class='ppt-list-person'>
+        <view class='creator-info'>
+          <image src="{{ppt.info.head}}"></image>
+          <text>{{ppt.info.title}}</text>
+        </view>
+        <!-- <view class='ppt-other-info'>
+          <image src='/images/look.png' ></image>
+          <text style='margin:0 10rpx;'>{{ppt.clickCount}}</text>
+          <text style='margin-right:10rpx;'>·</text>
+          <text>{{ppt.score}}</text>
+        </view> -->
+      </view>
+      <view wx:if="{{ppt.role==='meeting'}}" class='ppt-list-meeting'>
+         <template is="list-meeting" data="{{...ppt.info.meetingHeader}}" />
+      </view>
+    </view>
+    <view class='devide-line' wx:if="{{idx !== pptList.length-1}}"></view>
+  </block>
+</template>

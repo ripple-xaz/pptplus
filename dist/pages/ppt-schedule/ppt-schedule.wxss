@@ -1,0 +1,18 @@
+/* dist/pages/ppt-schedule/ppt-schedule.wxss */
+@import "/dist/components/ppt-list/ppt-list.wxss";
+@import "/dist/components/ppt-schedule/ppt-schedule.wxss";
+@import "/dist/components/pices/page-loading/page-loading.wxss";
+.ppt-schedule{
+  background-color: #eee !important;
+}
+.create-btn{
+  height: 88rpx;
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #6195ff;
+  line-height: 88rpx;
+}
+.create-ctx{
+  position: absolute;
+  left: -99999px;
+}

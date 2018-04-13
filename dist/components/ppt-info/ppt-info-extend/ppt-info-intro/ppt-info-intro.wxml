@@ -1,0 +1,11 @@
+<template name="ppt-info-intro">
+  <view >
+      <view id='ppt-info-intro' wx:if="{{true}}" class='intro-content'  >
+         {{pptIntro}}
+    </view>
+    <view id='ppt-info-intro' wx:else class='ppt-info-intro-nothing'>
+        <image  src='/images/ppt-intro-notfound.png'></image>
+        <view>作者什么都没留下</view>
+    </view>
+  </view>
+</template>

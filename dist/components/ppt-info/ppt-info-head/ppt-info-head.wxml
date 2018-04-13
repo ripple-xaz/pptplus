@@ -1,0 +1,27 @@
+<!--ppt详情发布者信息  -->
+<template name="ppt-info-head">
+  <view class="ppt-info-head">
+    <image class='head-img' src="{{creatorImg}}"></image>
+    <view>
+      <view class="title ellipsis">{{title}}</view>
+      <view class="creatorName">{{creatorName}}</view>
+      <!-- <text class='ppt-info-head-hot' style='margin-right:10rpx;'>{{pubTime}}</text>·
+      <text class='ppt-info-head-hot' style='margin-right:10rpx;'>{{clickCount}}阅读</text>·
+      <text class='ppt-info-head-hot' bindtap='collectPpt'>{{collectCount}}收藏</text> -->
+    </view>
+    <!--收藏  -->
+    <view class='head-collect' >
+      <view  bindtap='pptCollect'>
+          <image class='collect-icon' src="{{checkPptCollect?'/images/ppt-info-collection_fill.png':'/images/ppt-info-collection.png'}}"></image>
+           <view style="color:rgb(97,149,255)">{{checkPptCollect?'已收藏':'未收藏'}}</view> 
+      </view>
+      <view>
+          <image bindtap='createImg' class='share-icon' src="/images/ppt-info-share.png"></image>
+          <view style="color:rgb(97,149,255)">生成图片</view>  
+      </view>
+
+     
+    </view>   
+  </view>
+  <view class='devide-line'></view>
+</template>

@@ -1,0 +1,10 @@
+<template name="ppt-info-tab">
+  <view class='devide-line'></view>
+  <view class="ppt-info-tab">
+      <block wx:for="{{texts}}" wx:for-item="item"  wx:key="{{item.text}}">
+        <view bindtap='changeIntro'  data-type="{{item.text}}" data-idx="{{item.idx}}" class="{{tabCurrentIdx===item.idx?'on':''}}">
+          {{item.text}}
+        </view>
+      </block>
+  </view>
+</template>

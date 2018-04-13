@@ -1,0 +1,10 @@
+<!--dist/pages/ppt-schedule/ppt-schedule.wxml-->
+<import src="/dist/components/ppt-list/ppt-list.wxml"/>
+<import src="/dist/components/ppt-schedule/ppt-schedule.wxml"/>
+<template is="ppt-schedule" data="{{durationDays,pptScheduleSessions,dayTabIdx,daySessionIdx,pptScheduleSessionSholdHeight,meetingIntro}}" />
+
+<import src="/dist/components/pices/page-loading/page-loading.wxml"/>
+<template is="page-loading" data="{{pageLoading}}" />
+ 
+<!-- <view bindtap='createImg' class='create-btn' style='text-align:center'>生成图片</view>
+<canvas class='create-ctx' canvas-id="myCanvas" style="position:absolute;width:750rpx;height:750rpx;"/>     -->

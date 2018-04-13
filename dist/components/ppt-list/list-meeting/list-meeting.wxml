@@ -1,0 +1,18 @@
+<template name="list-meeting">
+     <!--会议名称  -->
+          <view class='meeting-item'>
+            <image class='title-img' src='/images/meeting.png'></image>
+            <text>{{title}}</text>
+          </view>
+          <!--会议时间  -->
+          <view class='meeting-item'>
+            <image class='duration-img' src='/images/date.png'></image>
+            <text>{{meetingDuration.timeStart===meetingDuration.timeEnd?meetingDuration.timeStart:meetingDuration.timeStart+' 至 '+meetingDuration.timeEnd}}</text>
+          </view>
+          <!--会议地址  -->
+          <view class='meeting-item' bindtap='getPptAddress' data-latitude='{{latlng.lat}}' data-longitude='{{latlng.lng}}' hover-class='get-address'>
+            <image class='address-img' src='/images/location.png'></image>
+            <text>{{address}}</text>
+            <image  class='address-right' src='/images/enter_07.png'></image>
+          </view>
+</template>

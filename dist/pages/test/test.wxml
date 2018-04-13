@@ -1,0 +1,31 @@
+<!--dist/pages/test/test.wxml-->
+<text>dist/pages/test/test.wxml</text>
+
+
+  <scroll-view class="swiper-left"    scroll-left="50" scroll-x="{{isScroll}}" >
+    <view class='list-wrap clearfloat'>
+      <view class='list-view'>312312</view>
+    </view>
+  </scroll-view>
+  <image src='{{imgsrc}}'></image>
+
+<view class="section">
+  <view class="section__title">日期选择器</view>
+  <picker mode="multiSelector" bindchange="bindDateChange">
+    <view class="picker">
+      当前选择: {{date}}
+    </view>
+  </picker>
+</view>
+
+<swiper>
+   <swiper-item>
+      <image src="{{imgsrc}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{imgsrc}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+     <swiper-item>
+      <image src="{{imgsrc}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+</swiper>

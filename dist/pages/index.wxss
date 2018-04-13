@@ -1,0 +1,3 @@
+/* dist/pages/index.wxss */
+@import "/dist/components/ppt-list/ppt-list.wxss";
+@import "/dist/components/pices/page-loading/page-loading.wxss"

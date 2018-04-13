@@ -1,0 +1,25 @@
+<template name="ppt-schedule-head">
+  <view class="ppt-list">
+    
+     <view class='ppt-cover-container'>
+        <image class='ppt-cover'  src="{{cover}}"></image>
+      </view>
+    <!--会议名称  -->
+      <view class='meeting-item meeting-title'>
+        <image class='title-img' src='/images/meeting.png'></image>
+        <text>{{title}}</text>
+      </view>
+      <!--会议时间  -->
+      <view class='meeting-item meeting-time'>
+        <image class='duration-img' src='/images/date.png'></image>
+        <text>{{meetingDuration.timeStart===meetingDuration.timeEnd?meetingDuration.timeStart:meetingDuration.timeStart+' 至 '+meetingDuration.timeEnd}}</text>
+      </view>
+      <!--会议地址  -->
+      <view class='meeting-item meeting-address' bindtap='getPptAddress' hover-class='get-address'  data-latitude='{{latlng.lat}}' data-longitude='{{latlng.lng}}'>
+        <image class='address-img' src='/images/location.png'></image>
+        <text >{{address}}</text>
+        <image  class='address-right' src='/images/enter_07.png'></image>
+      </view>
+  </view>
+  <view class='devide-line' style='height:25rpx;'></view>
+</template>

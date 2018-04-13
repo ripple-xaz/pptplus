@@ -1,0 +1,17 @@
+.swiper-container image{
+   width: 100%;
+   height: 100%;  
+  vertical-align: middle;
+}
+.swiper{
+  height: 100%;
+  /* line-height: 420rpx; */
+  background-color: #ccc;
+}
+.swiper-container{
+  height: 100%;
+}
+.cover{
+  width: 100%;
+  height: 100%;
+}

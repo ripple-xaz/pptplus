@@ -1,0 +1,12 @@
+<template name="my-mid-tab">
+  <view class='my-mid-tab flex-align'>
+    <block wx:for="{{tabItems}}" wx:for-item="tab" wx:for-index="idx" wx:key="unique" >
+        <view  bindtap="changeTab" data-idx="{{tab.idx}}" class="{{tabCurrentIdx===tab.idx?'on':''}} {{idx<tabItems.length?'btn':''}}">
+            <view  class=" xy-mid">
+              <image src="{{tabCurrentIdx===tab.idx?tab.activeImg:tab.img}}"></image>    
+              <text class='block'>{{tab.text}}</text>
+            </view>
+        </view>
+    </block>
+  </view>
+</template>

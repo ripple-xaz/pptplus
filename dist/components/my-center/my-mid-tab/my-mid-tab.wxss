@@ -1,0 +1,36 @@
+.my-mid-tab{
+  height: 144rpx;
+  background-color: #fff;
+}
+.my-mid-tab>view{
+  text-align: center;
+  position: relative;
+  color: rgb(136, 136, 136);
+}
+.my-mid-tab>view{
+  border-bottom: 2rpx solid #eee;
+}
+.my-mid-tab>view.on {
+  border-bottom: 2rpx solid #6195ff;
+}
+.my-mid-tab>view.on text{
+  color: #6195ff;
+  
+}
+.btn::after{
+  content: "";
+  display: inline-block;
+  height: 102rpx;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top:50%;
+  transform: translateY(-50%);
+  border-right:1rpx solid rgba(0, 0, 0, .15)
+}
+
+.my-mid-tab image{
+  margin: 8rpx 0 12rpx 0;
+  height:48rpx;
+  width:56rpx;
+}

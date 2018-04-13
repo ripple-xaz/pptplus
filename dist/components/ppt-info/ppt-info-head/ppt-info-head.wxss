@@ -1,0 +1,49 @@
+.ppt-info-head{
+  display: flex;
+  position: relative;
+}
+ .head-img{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  margin: 32rpx 16rpx 32rpx 24rpx;
+}
+.title{
+  font-size: 34rpx;
+  color: rgb(53,53,53);
+  margin: 39rpx 0 4rpx;
+  font-weight: 600;
+   width: 540rpx;
+}
+.creatorName{
+  font-size: 24rpx;
+  color: rgb(53,53,53);
+  margin-top: 20rpx;
+ 
+}
+.ppt-info-head-hot{
+  color: rgb(136, 136, 136);
+  font-size: 24rpx;
+}
+.head-collect{
+  position: absolute;
+  right: 40rpx;
+  bottom: 30rpx;
+  display: flex;
+  height: 60rpx;
+  text-align: center;
+  font-size: 18rpx;
+}
+.collect-icon{
+    width: 52rpx;
+    height: 50rpx;
+}
+.share-icon{
+    width: 50rpx;
+    height: 50rpx;
+}
+.head-collect>view{
+  flex: 1;
+  text-align: center;
+  width: 80rpx;
+}

@@ -1,0 +1,51 @@
+.ppt-list{
+  width: 702rpx;
+  margin-left: 24rpx;
+  background-color: #eee;
+  padding-left: 0;
+}
+.ppt-cover{
+  margin: 0;
+  border-top-left-radius:10rpx;
+  border-top-right-radius:10rpx;
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;  
+}
+.ppt-cover-container{
+  height: 320rpx;
+}
+.meeting-item{
+  padding-left: 24rpx;
+  border-bottom: 1rpx solid #ccc;
+  background-color: #fff;
+}
+.meeting-item:last-child{
+   border-bottom: none;
+}
+.meeting-title{
+  height: 84rpx;
+  box-sizing: border-box;
+}
+.meeting-title text{
+  font-size: 37rpx;
+}
+.get-address{
+  background-color: #eee;
+}
+.meeting-time,.meeting-address{
+  height: 64rpx;
+  line-height: 64rpx;
+}
+.meeting-address{
+  border-bottom-right-radius:10rpx;
+  border-bottom-left-radius:10rpx; 
+}
+.meeting-time text,.meeting-adress text{
+  font-size: 26rpx;
+}
+.title-img{
+  margin-top: 32rpx ;
+}
+.duration-img,.address-img{
+ vertical-align: middle
+}

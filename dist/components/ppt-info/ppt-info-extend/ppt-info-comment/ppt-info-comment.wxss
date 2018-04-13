@@ -1,0 +1,130 @@
+.ppt-info-comment{
+  box-sizing: border-box;
+}
+.ppt-info-comment-nothing{
+  color: rgb(178, 178, 178);
+  text-align: center;
+}
+.ppt-info-comment-nothing image{
+  margin:136rpx 0 24rpx;
+  width: 88rpx;
+  height: 88rpx;
+}
+.comment-content{
+  padding: 40rpx 24rpx 0;
+  line-height: 64rpx;
+  font-size: 32rpx;
+  text-indent: 2em;
+}
+
+.comment-list{
+  display: flex;
+  border-bottom: 1rpx solid #eee;
+
+}
+.first-comment-head-wrap{
+  width: 112rpx;
+}
+.first-comment-head{
+    width: 64rpx;
+    height: 64rpx;
+    border-radius: 50%;
+    margin:24rpx 24rpx 0 24rpx;
+}
+.comment-praise{
+  width: 22rpx;
+  height: 22rpx;
+  vertical-align: middle;
+  margin:0 12rpx 12rpx 0;
+}
+/* .comment-praising{
+  animation-name:praising;
+  animation-duration: 1s;
+} */
+.praise-effect{
+  position: absolute;
+  bottom: 10rpx;
+  font-size: 26rpx;
+  left: -36rpx;
+  opacity: 0;
+  color: rgb(97,149,255);
+}
+/* .praise-extra{
+  animation-name: praise-extra;
+  animation-duration:  1s;
+} */
+.first-comment-content-wrap{
+  width: 638rpx;
+}
+.first-comment-name{
+   font-size: 24rpx;
+  color: rgb(102, 102, 102);
+  margin-top: 24rpx;
+}
+.first-comment-content{
+  font-size: 26rpx;
+  color: rgb(53, 53, 53);
+  margin: 12rpx 0 8rpx;
+}
+.first-comment-other{
+  font-size: 22rpx;
+  height: 40rpx;
+  line-height: 44rpx;
+  color: rgb(178, 178, 178);
+  position: relative;
+  margin-bottom: 4rpx;
+}
+.comment-wrap{
+  height: 88rpx;
+  display: flex; 
+  position: fixed;
+  width: 750rpx;
+  bottom: 0;
+  left: 0;
+  z-index:9999;
+  border-top: 2rpx solid rgb(238, 238, 238);
+  line-height: 88rpx;
+  background-color: #fff;
+}
+.comment-wrap input{
+  margin: 12rpx 0 0 24rpx;
+  background-color: rgb(238, 238, 238);
+  width: 624rpx;
+  font-size: 26rpx;
+  color: rgb(136, 136, 136);
+  padding-left: 15rpx;
+  box-sizing: border-box;
+  height: 64rpx;
+  border-radius: 10rpx;
+}
+.comment-btn{
+  color:rgb(178, 178, 178);
+  font-size: 26rpx; 
+  display: inline-block;
+  width: 100rpx;
+  margin: 0 2rpx;
+  text-align: center;
+}
+/* @keyframes praising{
+ 0% {
+		transform: scale(1)
+	}
+	50% {
+  	transform: scale(1.5)
+	}
+	70% {
+		transform: scale(.8)
+	}
+	100% {
+		transform: scale(1)
+	} 
+}
+@keyframes praise-extra{
+  0%{
+		 opacity:1;
+	}
+	100% {
+		opacity: 0;
+    bottom: 80rpx;
+	} 
+} */

@@ -1,0 +1,17 @@
+<import src="ppt-info-intro/ppt-info-intro.wxml" />
+<import src="ppt-info-comment/ppt-info-comment.wxml" />
+<import src="ppt-info-score/ppt-info-score.wxml" />
+
+<template name="ppt-info-extend" >
+  <!-- <swiper class='ppt-info-extend' style='height:{{swiperHeight}}' circular="{{true}}" bindchange="extendChange" duration='500' current="{{extendIdx}}">
+    <swiper-item> -->
+        <template is="ppt-info-intro" data="{{pptIntro}}"/>
+    <!-- </swiper-item>
+    <swiper-item>
+        <template is="ppt-info-comment" data="{{comments,praiseEffectAnimationData}}"/>
+    </swiper-item>
+    <swiper-item>
+        <template is="ppt-info-score" data="{{scoreStyle,scoreNum,scoreImg}}" />
+    </swiper-item> -->
+  <!-- </swiper> -->
+</template>

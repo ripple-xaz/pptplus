@@ -1,0 +1,18 @@
+.ppt-info-intro{
+  min-height: 472rpx;
+}
+.ppt-info-intro-nothing{
+  color: rgb(178, 178, 178);
+  text-align: center;
+}
+.ppt-info-intro-nothing image{
+  margin:136rpx 0 24rpx;
+  width: 88rpx;
+  height: 88rpx;
+}
+.intro-content{
+  padding: 40rpx 24rpx 0;
+  line-height: 64rpx;
+  font-size: 32rpx;
+  text-indent: 2em;
+}

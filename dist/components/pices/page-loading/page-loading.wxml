@@ -1,0 +1,5 @@
+<template name="page-loading">
+  <view wx:if="{{pageLoading}}" class='page-loading'>
+    <image  src="../../../images/page-loading.gif"></image>
+  </view>
+</template>

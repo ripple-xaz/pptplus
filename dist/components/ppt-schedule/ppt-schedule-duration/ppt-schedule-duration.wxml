@@ -1,0 +1,10 @@
+<template name="ppt-schedule-duration">
+    <view class='ppt-schedule-duration'>
+      <!-- <block wx:for="{{durationDays}}"  wx:for-item="day" wx:for-index="idx" wx:key="{{day.date}}" >
+        <view bindtap='changeDayTab' data-idx="{{idx}}" class="{{dayTabIdx===idx?'on':''}} {{idx<durationDays.length?'btn':''}}">{{day.date}}</view>
+      </block> -->
+      <image src='{{durationDays.length>1&&dayTabIdx!=0?"../../../images/go-to-left.jpg":""}}' bindtap='goLastDay' class='go-to-last icon-bg'>上一页</image>
+      <view bindtap='changeDayTab'  data-idx="{{idx}}" class="on duration-day">{{durationDays[dayTabIdx].date}}</view>
+      <image src='{{durationDays.length>1&&durationDays.length-1!=dayTabIdx?"../../../images/go-to-right.jpg":""}}' bindtap='goNextDay' class='go-to-next icon-bg'>下一页</image>
+    </view>
+</template>

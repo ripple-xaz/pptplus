@@ -1,0 +1,12 @@
+@import "my-ppt-list/my-ppt-list";
+@import "my-ppt-upload/my-ppt-upload";
+@import "/dist/components/pices/more-list/more-list.wxss";
+.loading-more{
+  width: 750rpx;
+  height: 60rpx;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  background-color: #eee;
+  color: #999;
+}

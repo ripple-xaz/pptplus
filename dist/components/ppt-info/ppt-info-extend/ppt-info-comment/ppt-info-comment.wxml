@@ -1,0 +1,30 @@
+<template name="ppt-info-comment">
+    <view  wx:if="{{true}}" >
+         <view class='ppt-info-comment' id='ppt-info-comment' style='padding-bottom:88rpx;' >
+            <block  wx:for="{{comments}}" wx:for-index="idx" wx:for-item="item" wx:key="{{item.id}}">
+                <view class='comment-list'>
+                    <view class='first-comment-head-wrap' >
+                      <image class='first-comment-head'  src='{{item.headImg}}'></image>
+                    </view>
+                    <view class='first-comment-content-wrap'>
+                      <view class='first-comment-name'>{{item.nickName}}</view>
+                      <view class='first-comment-content'>{{item.content}}</view>
+                      <view class='first-comment-other'>
+                        <view style='display:inline-block' bindtap='praise' data-checkpraise="{{item.checkPraise}}" data-idx="{{idx}}" data-id='{{item.id}}'>
+                           <image animation="{{item.animationData}}" class='comment-praise }}'  src="{{item.checkPraise?'/images/praise_02.png':'/images/praise_01.png'}}"></image>
+                        <text animation="{{item.animationExtraData}}" class='praise-effect '>+1</text>
+                        <text style="color:{{item.checkPraise?'rgb(97,149,255)':''}}">{{item.praiseNum}}</text>
+                       </view>
+                        <text style='margin:0 12rpx;'>·</text>
+                        <text>{{item.time}}</text>
+                      </view>
+                    </view>
+                </view> 
+            </block>
+         </view> 
+    </view>
+    <view id='ppt-info-comment' wx:else class='ppt-info-comment-nothing'>
+        <image src='/images/ppt-intro-notfound.png'></image>
+        <view>暂无评论</view>
+    </view>
+</template>

@@ -1,0 +1,26 @@
+<!--dist/pages/my-ppt/my-ppt.wxml-->
+<!--用户信息  -->
+<import src="/dist/components/my-center/user-info/user-info"/>
+<import src="/dist/components/my-center/my-mid-tab/my-mid-tab"/> 
+<import src="/dist/components/my-center/my-ppt-extend/my-ppt-extend"/> 
+<import src="/dist/components/ppt-info/ppt-info-extend/ppt-info-extend" />
+<import src="/dist/components/pices/page-loading/page-loading.wxml"/>
+<!-- <template is="page-loading" data="{{pageLoading}}" /> -->
+
+
+
+<scroll-view scroll-y="{{isScroll}}" bindscrolltolower="loadingMore" class='page-scroll' >
+    <view >
+      <!--用户信息  -->
+      <template is="user-info" data="{{...userInfo}}"/>
+      <!--选项卡  -->
+      <template is="my-mid-tab" data="{{...myMidTab,tabCurrentIdx}}"/> 
+      <!--内容区域  -->
+      <template is="my-ppt-extend" data="{{myPptList,myPptCollect,tabCurrentIdx,isLoadingMore,moreLists,bottomTouch,isIpx}}"/> 
+      <!-- <template is="my-ppt-list" data="{{myPptList,pptListPosition}}"/>  -->
+      <!--上传文稿btn  -->
+      <!-- <template is="upload-btn"/> -->
+    </view>
+    <canvas class='create-ctx' canvas-id="myCanvas" style="position:absolute;width:750rpx;height:750rpx;"/>
+</scroll-view>
+   

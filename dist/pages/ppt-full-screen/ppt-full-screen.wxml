@@ -1,0 +1,15 @@
+<!--dist/pages/ppt-full-screen/ppt-full-screen.wxml-->
+<import src="/dist/components/ppt-info/ppt-swiper-count/ppt-swiper-count.wxml"/>
+<view class='ppt-swiper-count'>
+    <swiper vertical="{{isVertical}}" bindtouchend='hideCount' bindtouchstart='showCount' bindchange="swiperChange" style="height:100vh;width:100vw;text-align:center;">
+    <block wx:for="{{imgUrls}}" wx:for-item="img" wx:key="img">
+        <swiper-item >
+        <image style='{{scaleStyle}}' mode="aspectFit" bindtouchstart='scaleStart' bindtouchmove='scaleMove' bindtouchend='scaleEnd' src='{{img}}'></image>
+      </swiper-item>
+    </block>
+  </swiper> 
+  <view class='count-wrap'>
+    <template is="count" data="{{total:imgUrls.length,current,pptCountAnimationData}}"/>
+  </view>
+</view>
+

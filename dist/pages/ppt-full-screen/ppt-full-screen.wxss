@@ -1,0 +1,21 @@
+/* dist/pages/ppt-full-screen/ppt-full-screen.wxss */
+@import "/dist/components/ppt-info/ppt-swiper-count/ppt-swiper-count.wxss";
+.ppt-swiper-count{
+  position: relative;
+}
+swiper{
+  position: relative;
+  background-color: #000;
+}
+image{
+   width: 100%; 
+   height: 100%; 
+   transform-origin: (50%,50%);
+}
+.count-wrap{
+  position: absolute;
+  top: 0;
+  width: 200rpx;
+  height: 50rpx;
+  z-index: 2;
+}

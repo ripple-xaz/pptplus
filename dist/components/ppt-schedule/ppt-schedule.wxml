@@ -1,0 +1,31 @@
+<!--header  -->
+<import src="ppt-schedule-head/ppt-schedule-head"/> 
+<!--日期tab栏  -->
+<import src="ppt-schedule-duration/ppt-schedule-duration"/> 
+<!--对应日期下的schedule栏  -->
+<import src="ppt-schedule-session/ppt-schedule-session.wxml"/>
+
+<template name="ppt-schedule">
+   <view class='ppt-schedule'>
+      <!--头部  -->
+      <view class='devide-line' style='height:24rpx;'></view>
+      <template is="ppt-schedule-head" data="{{...meetingIntro}}"/>
+      <!--日期tab  -->
+      <template is="ppt-schedule-duration" data='{{durationDays,dayTabIdx}}'/>
+      <!--当日日程  -->
+      <swiper style='height:{{pptScheduleSessionSholdHeight}}' current="{{daySessionIdx}}" circular='{{false}}' duration='500' bindchange="daySessionChange">
+        <!--第一层循环，生成根据日期形成轮播图  -->
+         <view   wx:for="{{pptScheduleSessions}}" wx:for-item="daySessions" wx:for-index="daySessionIdx" wx:key="daySessionIdx">
+          <swiper-item>
+            <!-- id用来切换的时候改变轮播图的高度 -->
+            <view id='{{"daySession"+daySessionIdx}}'>
+              <!--第一层循环，将当日日程遍历到当前的日程表中  -->
+              <view  wx:for="{{daySessions}}" wx:for-index="sessionIdx" wx:for-item="session" wx:key="session.id">
+                <template is="ppt-schedule-session" data="{{...session}}"/>
+              </view>
+            </view>
+          </swiper-item>
+        </view>
+      </swiper>
+   </view>
+</template>

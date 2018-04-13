@@ -1,0 +1,61 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.7.0",
+	"appid": "wxa17a7bb135aecd0b",
+	"projectname": "pptplus",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "个人中心测试",
+					"pathName": "dist/pages/my-ppt/my-ppt",
+					"query": "",
+					"scene": "1017"
+				},
+				{
+					"id": -1,
+					"name": "扫描小程序码",
+					"pathName": "dist/pages/my-ppt/my-ppt",
+					"query": "",
+					"scene": "1047"
+				},
+				{
+					"id": 2,
+					"name": "ppt详情页",
+					"pathName": "dist/pages/ppt-info/ppt-info",
+					"query": "scene=5a68705c0fc41d0f07e8f174",
+					"scene": "1048"
+				},
+				{
+					"id": 3,
+					"name": "ppt会议",
+					"pathName": "dist/pages/ppt-schedule/ppt-schedule",
+					"query": "roleId=100",
+					"scene": "1012"
+				}
+			]
+		}
+	}
+}

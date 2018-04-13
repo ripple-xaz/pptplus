@@ -1,0 +1,16 @@
+.page-loading{
+  position: fixed;
+  top: 0;
+  z-index: 66666;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  line-height: 100vh;
+  text-align: center;
+  padding-top: 100rpx;
+  box-sizing: border-box;
+}
+.page-loading image{
+  width: 200rpx;
+  height: 200rpx;
+}

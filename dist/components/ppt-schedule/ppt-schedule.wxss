@@ -1,0 +1,4 @@
+@import "ppt-schedule-duration/ppt-schedule-duration";
+@import "ppt-schedule-session/ppt-schedule-session";
+@import "/dist/components/ppt-list/ppt-list.wxss";
+@import "ppt-schedule-head/ppt-schedule-head";

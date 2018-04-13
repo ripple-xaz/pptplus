@@ -1,0 +1,6 @@
+<template name="ppt-schedule-session-duration">
+    <view class='ppt-schedule-session-duration'>
+      <image src='/images/time.png'></image>
+      <text>{{duration}}</text>
+    </view>
+</template>

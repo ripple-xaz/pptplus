@@ -1,0 +1,24 @@
+<template name="ppt-schedule-session-slicedppts">  
+  <view >
+     <!--当会议日程内容为宣讲ppt时  -->
+    <block wx:if="{{sessionType==='speak'}}" wx:for="{{slicedppts}}" wx:for-index="idx" wx:for-item="slicedppt" wx:key="{{slicedppt.id}}">
+      <view class='slicedppts' bindtap='navToPptInfo' data-pptid="{{slicedppt.pptId}}" hover-class='navto-info' >
+          <view class='slicedppts-left'>
+              {{slicedppt.mold}}
+          </view>
+          <view class='cutline' style="background-color:{{slicedppt.mold==='主会场'?'rgb(97,149,255)':'rgb(97,242,255)'}}"></view>
+          <view class='slicedppts-right'>
+            <view class='slicedppt-title'>{{slicedppt.title}}</view>
+            <view class='slicedppt-speaker'>{{slicedppt.speaker}}</view>
+          </view>
+      </view>
+    </block> 
+    <!--当会议日程内容为其他时  -->
+    <block wx:if="{{sessionType==='other'}}">
+     <view class='session-other' >
+        {{other}}
+      </view>
+    </block>
+   
+  </view>
+</template>

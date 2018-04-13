@@ -1,0 +1,19 @@
+/* dist/components/user-infomation/user-info.wxss */
+.user-info-container{
+  height: 320rpx;
+  text-align: center;
+  background-color: #fff;
+}
+.user-info-container image{
+  margin:60rpx 0 32rpx 0;
+  width: 136rpx;
+  height: 136rpx;
+  border-radius: 50%;
+}
+.user-name-container{
+    line-height: 32rpx;
+}
+.user-info-container text{
+  font-size: 32rpx;
+  color: #333333;
+}

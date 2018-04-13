@@ -1,0 +1,33 @@
+<!--dist/pages/ppt-info/ppt-info.wxml-->
+<import src="/dist/components/ppt-info/ppt-swiper-count/ppt-swiper-count.wxml"/>
+<import src="/dist/components/ppt-info/ppt-swiper/ppt-swiper.wxml" />
+<import src="/dist/components/ppt-info/ppt-info-head/ppt-info-head.wxml"/>
+<import src="/dist/components/ppt-info/ppt-info-tab/ppt-info-tab.wxml"/>
+<import src="/dist/components/ppt-info/ppt-info-extend/ppt-info-intro/ppt-info-intro.wxml"/>
+<import src="/dist/components/ppt-info/ppt-info-tab/ppt-info-tab.wxml"/>
+<import src="/dist/components/ppt-info/ppt-info-extend/ppt-info-extend" />
+<import src="/dist/components/pices/page-loading/page-loading.wxml"/>
+
+
+<template is="page-loading" data="{{pageLoading}}" />
+  <!--PPT详情  -->
+  <view id='head-container'>
+    <template is="ppt-info-head" data="{{...pptInfoHeadData,checkPptCollect}}"/>
+  </view>
+  <!--ppt详情轮播图  -->
+  <view class='ppt-swiper-container' id='swiper-container' fixed="true" style='{{styleListenByScorll}}'>
+    <template is="swiperContainer" data="{{...swiperList,imgSwiperHeight,cover}}"/>
+    <template is="count" data="{{total:swiperList.imgList.length,current,pptCountAnimationData}}"/>
+    <image class='ppt-full-screen' bindtap='pptFullScreen' data-id="pptId" src='/images/ppt-full-screen.png'></image>
+  </view>
+  <view style='{{extendMarginTop}}'>
+    <!--ppt简介tab -->
+    <template is="ppt-info-tab" data="{{...pptInfoTab,tabCurrentIdx}}" />
+    <!--ppt简介扩展内容  -->
+    <template  is="ppt-info-extend" data="{{extendIdx,extendStyle,swiperHeight,...score,comments,pptIntro}}"/>
+  </view>
+<view wx:if="{{comentPage}}" class='comment-wrap' fixed="true">
+    <input confirm-type="发送" bindblur='getComment' bindconfirm="comment"  placeholder="请输入评论"></input><text bindtap='comment' class='comment-btn'>发布</text>
+</view>
+ <!-- <view bindtap='createImg' class='create-btn' style='text-align:center'>生成图片</view> -->
+<canvas class='create-ctx' canvas-id="myCanvas" style="position:absolute;width:750rpx;height:750rpx;"/>   

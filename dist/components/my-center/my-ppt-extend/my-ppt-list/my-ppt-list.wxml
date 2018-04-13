@@ -1,0 +1,32 @@
+<import src="/dist/components/pices/more-list/more-list.wxml"/>
+
+
+<template name="my-ppt-list">
+  <view  wx:if="{{pptList.length>0}}"  bindscrolltolower="loadListMore" class="my-ppt-list-container">
+    <block wx:for="{{pptList}}"  wx:for-item="item" wx:for-index="idx" wx:key="{{item.id}}">
+       <view class='ppt-list-wrap'  >
+            <view class='my-ppt-list'  hover-class='hover-class'  bindtap='navToPptInfo'   data-id='{{item.id}}' data-prop="{{item.prop}}" data-idx="{{idx}}">
+                <view class='my-ppt-list-left'>
+                  <image src="{{item.imgsrc}}"></image>
+                </view>
+                <view class='my-ppt-list-right' >
+                  <view class='title ellipsis'>{{item.title}}</view>
+                  <text class="time">{{item.time}}</text>
+                </view>
+                <view class='operate-list' id='ppt-list-other' catchtap='showMoreList' data-id="{{item.id}}" data-idx="{{idx}}" data-prop="{{item.prop}}">
+                     <text></text>
+                     <text></text>
+                     <text></text>
+                </view>
+            </view>
+            <view class='more-list-container' style="top:{{bottomTouch?'-134rpx':'124rpx'}}" hidden='{{item.isShowMoreList}}'>
+                <template is="more-list" data='{{moreLists,id:item.id,bottomTouch}}'/>
+            </view>
+        </view>
+    </block>
+  </view>
+  <view id='my-ppt-list' wx:else class='no-ppt-list' style="height:{{isIpx?'726rpx':'658rpx'}}">
+    <image src="/images/ppt-intro-notfound.png"></image>
+    <view>{{tabCurrentIdx===0?'暂无PPT':'暂无收藏'}}</view>
+  </view>
+</template>

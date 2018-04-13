@@ -1,0 +1,7 @@
+<!--dist/pages/index.wxml-->
+<import src="/dist/components/ppt-list/ppt-list.wxml"/>
+
+<template is="ppt-list" data="{{pptList}}" />
+
+<import src="/dist/components/pices/page-loading/page-loading.wxml"/>
+<template is="page-loading" data="{{pageLoading}}" />

@@ -1,0 +1,10 @@
+<!--dist/components/user-infomation/user-info.wxml-->
+<template name="user-info">
+  <view class='user-info-container' bindtap="login">
+    <image src="{{headimgurl}}"></image>
+    <view class='user-name-container'>
+      <text>{{nickname}}</text>
+    </view>
+  </view>
+  <view class='devide-line'></view>
+</template>

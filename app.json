@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "dist/pages/index",
+    "dist/pages/ppt-info/ppt-info",
+    "dist/pages/my-ppt/my-ppt",
+    "dist/pages/ppt-full-screen/ppt-full-screen",
+    "dist/pages/ppt-schedule/ppt-schedule",
+    "dist/pages/test/test"
+    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#6195ff",
+    "navigationBarTextStyle": "#ffffff",
+    "navigationBarTitleText": "PPT小助手",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "borderStyle": "black",
+    "position": "bottom",
+    "color": "#B2B2B2",
+    "background-color": "white",
+    "selectedColor": "#6195ff",
+    "list": [
+      {
+        "pagePath": "dist/pages/index",
+        "iconPath": "images/home_01.png",
+        "selectedIconPath": "images/home_02.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "dist/pages/my-ppt/my-ppt",
+        "iconPath": "images/my_01.png",
+        "selectedIconPath": "images/my_02.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

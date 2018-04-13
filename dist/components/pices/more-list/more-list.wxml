@@ -1,0 +1,9 @@
+<template name="more-list">
+    <view class='more-list-wrap'>
+        <block  wx:for="{{moreLists}}"  wx:for-item="item" wx:for-index="idx" wx:key="{{idx}}">
+            <view class='more-list-item' hover-class='hover-class' bindtap='moreItemTap'  data-idx="{{idx}}">{{item.text}}</view>
+        </block>
+         <view hidden='{{bottomTouch}}' class='more-list-up-arrow'></view>
+         <view hidden='{{!bottomTouch}}' class='more-list-bottom-arrow'></view> 
+    </view>
+</template>

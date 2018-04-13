@@ -1,0 +1,28 @@
+/* dist/pages/ppt-info/ppt-info.wxss */
+@import "/dist/components/ppt-info/ppt-swiper/ppt-swiper.wxss";
+@import "/dist/components/ppt-info/ppt-swiper-count/ppt-swiper-count.wxss";
+@import "/dist/components/ppt-info/ppt-info-head/ppt-info-head.wxss";
+@import "/dist/components/ppt-info/ppt-info-tab/ppt-info-tab.wxss";
+@import "/dist/components/ppt-info/ppt-info-extend/ppt-info-extend.wxss";
+@import "/dist/components/ppt-info/ppt-info-extend/ppt-info-comment/ppt-info-comment.wxss";
+@import "/dist/components/ppt-info/ppt-info-extend/ppt-info-intro/ppt-info-intro.wxss";
+@import "/dist/components/ppt-info/ppt-info-extend/ppt-info-score/ppt-info-score.wxss";
+@import "/dist/components/pices/page-loading/page-loading.wxss";
+
+.ppt-swiper-container{
+  /* height: 420rpx; */
+  position: absolute;
+  z-index: 1;
+  width: 750rpx;
+}
+.ppt-full-screen{
+  position: absolute;
+  right:24rpx;
+  bottom:24rpx;
+  width:50rpx;
+  height:50rpx;
+}
+.create-ctx{
+  position: absolute;
+  left: -99999px;
+}

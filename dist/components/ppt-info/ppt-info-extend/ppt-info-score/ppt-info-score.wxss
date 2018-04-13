@@ -1,0 +1,17 @@
+.point{
+  width: 368rpx;
+  height: 47rpx;
+  margin-bottom: 16rpx;
+}
+.ppt-info-score{
+  text-align: center;
+  height: 472rpx;
+}
+.score-num{
+  margin: 80rpx 0 30rpx;
+  font-size: 80rpx;
+}
+.score-tit{
+  font-size: 24rpx;
+  color: rgb(153, 153, 153)
+}

@@ -1,0 +1,16 @@
+<import src="my-ppt-list/my-ppt-list" />
+<import src="my-ppt-upload/my-ppt-upload" />
+
+<template name="my-ppt-extend" >
+  <view class='ppt-info-extend-wrap' >
+        <view class='ppt-info-extend-item'  >
+            <template wx:if="{{tabCurrentIdx===0}}" is="my-ppt-list" data="{{pptList:myPptList,tabCurrentIdx,moreLists,bottomTouch,listAnimation,isIpx}}"/>
+            <template wx:if="{{tabCurrentIdx===1}}" is="my-ppt-list" data="{{pptList:myPptCollect,tabCurrentIdx,moreLists,bottomTouch,collAnimation,isIpx}}"/>
+            <template  wx:if="{{tabCurrentIdx===2}}" is="my-ppt-upload" data="{{uploadAnimation,isIpx}}"/>
+        </view>
+       <!-- <image class='loading-more' mode='center'  src='../../../../images/loading_01.gif'></image> -->
+       <view hidden="{{isLoadingMore}}"  class='loading-more'>
+       加载中...
+       </view>
+  </view>
+</template>

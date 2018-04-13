@@ -1,0 +1,13 @@
+.ppt-schedule-session-duration image{
+  width: 22rpx;
+  height: 22rpx;
+  margin:0rpx 16rpx 6rpx 24rpx;
+  vertical-align: middle;
+}
+.ppt-schedule-session-duration {
+  height: 40rpx;
+  line-height: 40rpx;
+  background-color: #eee;
+  font-size: 24rpx;
+  color: rgb(53, 53, 53);
+}
